@@ -1,4 +1,4 @@
-all: fondrie_cv.pdf
+all: fondrie_cv.pdf fondrie_biosketch.pdf
 
 %.pdf: %.tex
 	pdflatex $*.tex
