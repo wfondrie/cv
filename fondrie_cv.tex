@@ -2,7 +2,13 @@
 \usepackage[hidelinks=true]{hyperref}
 \usepackage[english]{babel}
 
+% Reverse Numbering
 \usepackage{etaremune}
+
+% Use Roboto font
+\usepackage[rm]{roboto}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
 
 % Set 1-inch margins.
 \usepackage[margin=1in]{geometry}
@@ -14,7 +20,7 @@
 \setlength{\parindent}{0in}
 
 % Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex}{\bf #1}}
+\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad \hrulefill}}
 
 % Set the numbering style.
 \renewcommand{\labelenumi}{(\arabic{enumi})}
@@ -28,10 +34,17 @@
 % Smarter version of href.
 \newcommand{\myref}[1]{\href{#1}{\url{#1}}}
 
+% Table sizes
+\newlength{\leftcol}
+\setlength{\leftcol}{0.6in}
+\newlength{\rightcol}
+\setlength{\rightcol}{6.25in minus \leftcol}
+\newcommand\tdim{p{\leftcol}p{\rightcol}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \begin{center}
-  {\Large William E. Fondrie}
+  {\bf \Large \textrm{William E. Fondrie, Ph.D.}}
 
   Department of Genome Sciences\\
   University of Washington\\
@@ -44,7 +57,7 @@
 \mysection{Education}
 
 % \begin{tabular}{p{1in}p{4.75in}}
-\begin{tabular}{p{0.5in}p{5.75in}}
+\begin{tabular}{\tdim}
   % 9/2013--06/2018
   2013--18 & Ph.D. in Molecular Medicine, University of Maryland, Baltimore.
                \newline Advisors: Dudley K. Strickland, Ph.D.\
@@ -55,7 +68,7 @@
 
 \mysection{Employment and Professional Appointments}
 
-\begin{tabular}{p{0.5in}p{5.75in}}
+\begin{tabular}{\tdim}
   2019--   & University of Washington Data Science Postdoctoral Fellow.\\
   2018--   & Postdoctoral Fellow, University of Washington.
              \newline Advisor: William S. Noble, Ph.D.\\
@@ -66,23 +79,24 @@
 
 \mysection{Awards and Honors}
 
-\begin{tabular}{p{0.5in}p{5.75in}}
-  2019 & Ruth L. Kirschstein Institutional National Research Service Award,
-         NIH T32HG000035.
-         \newline \textit{Postdoctoral Trainee}.\\
-  2017 & Travel Fellowship to the May Institute on Computation and Statistics
-         for Mass Spectrometry and Proteomics.\\
-  2017 & Ruth L. Kirschstein Individual National Research Service Award,
-         NIH F31CA213815. \\
-         %\newline \textit{Impact Score: 25 (16\%)}\\
-  2016 & Ruth L. Kirschstein Institutional National Research Service Award,
-         NIH T32HL007698.
-         \newline \textit{Predoctoral Trainee}.\\
-  2012 & Markham Summer Undergraduate Research Award.\\
-  2009 & Central Carolina's chapter of Phi Beta Kappa Scholarship.\\
+\begin{tabular}{\tdim}
+  2019--   & Ruth L. Kirschstein Institutional National Research Service Award,
+             NIH T32HG000035.
+             \newline \textit{Postdoctoral Trainee}.\\
+  2017     & Travel Fellowship to the May Institute on Computation and Statistics
+             for Mass Spectrometry and Proteomics.\\
+  2017--18 & Ruth L. Kirschstein Individual National Research Service Award,
+             NIH F31CA213815. \\
+             % \newline \textit{Impact Score: 25 (16\%)}\\
+  2016--17 & Ruth L. Kirschstein Institutional National Research Service Award,
+             NIH T32HL007698.
+             \newline \textit{Predoctoral Trainee}.\\
+  2012     & Markham Summer Undergraduate Research Award.\\
+  2009     & Central Carolina's chapter of Phi Beta Kappa Scholarship.\\
 \end{tabular}
 
-\mysection{Refereed Publications} (* indicates equal contribution)
+\mysection{Refereed Publications}
+{\small (* indicates equal contributions)}
 %\begin{enumerate}
 \begin{etaremune}
   
@@ -226,7 +240,7 @@
 
 \mysection{Professional Service}
 
-\begin{tabular}{p{0.5in}p{5.75in}}
+\begin{tabular}{\tdim}
   2019       & Genome Sciences Art Committee \\
   2018--     & Postdoctoral representative for UW Genome Sciences faculty meetings\\ 
   2015--17   & UMB Molecular Medicine Event Planning Committee \\
