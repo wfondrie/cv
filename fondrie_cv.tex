@@ -38,8 +38,13 @@
 \newlength{\leftcol}
 \setlength{\leftcol}{0.6in}
 \newlength{\rightcol}
-\setlength{\rightcol}{6.25in minus \leftcol}
+\setlength{\rightcol}{5.25in minus \leftcol}
 \newcommand\tdim{p{\leftcol}p{\rightcol}}
+
+% No hyphenation
+\pretolerance=10000
+\raggedright
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
