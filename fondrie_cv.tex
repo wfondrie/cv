@@ -28,9 +28,6 @@
 % Make the \footnote command print symbols (*, etc).
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-% Include stuff that doesn't belong in the biosketch.
-\newcommand{\notbiosketch}[1]{#1}
-
 % Smarter version of href.
 \newcommand{\myref}[1]{\href{#1}{\url{#1}}}
 
@@ -50,18 +47,16 @@
 
 \begin{center}
   {\bf \Large \textrm{William E. Fondrie, Ph.D.}}
-
+  
   Department of Genome Sciences\\
   University of Washington\\
-  %(910) 603--1577\\
   wfondrie@uw.edu \\
-  \url{https://willfondrie.com}\\
+  \myref{https://willfondrie.com}\\
   Updated \today.
 \end{center}
 
-\mysection{Education}
 
-% \begin{tabular}{p{1in}p{4.75in}}
+\mysection{Education}
 \begin{tabular}{\tdim}
   % 9/2013--06/2018
   2013--18 & Ph.D. in Molecular Medicine, University of Maryland, Baltimore.
@@ -79,11 +74,9 @@
              \newline Advisor: William S. Noble, Ph.D.\\
   2013--18 & Graduate Research Assistant, University of Maryland,
              Baltimore.\\
-
 \end{tabular}
 
 \mysection{Awards and Honors}
-
 \begin{tabular}{\tdim}
   2019--   & Ruth L. Kirschstein Institutional National Research Service Award,
              NIH T32HG000035.
@@ -100,11 +93,12 @@
   2009     & Central Carolina's chapter of Phi Beta Kappa Scholarship.\\
 \end{tabular}
 
+
 \mysection{Refereed Publications}
 {\small (* indicates equal contributions)}
-%\begin{enumerate}
+
 \begin{etaremune}
-  
+
   \item \textbf{Fondrie WE}, Noble WS. (2020) Machine learning strategy that
     leverages large datasets to boost statistical power in small-scale
     experiments. \textit{J Proteome Res} PMID: 32009418.
@@ -196,7 +190,8 @@
 \begin{etaremune}
   \item {\bf Fondrie, WE}, Noble WS. Boosting statistical power in small-scale
     experiments with Percolator. US Human Proteome Organization 16th Annual
-    Conference. Seattle, WA. March 8--11, 2020.
+    Conference. Seattle, WA. March 8--11, 2020. \textit{Cancelled due to
+      COVID-19.}
   
   \item {\bf Fondrie, WE}, Noble WS. Static Models Improve Percolator
     Performance on Small-Scale Proteomics Experiments. University of Washington
@@ -244,20 +239,16 @@
 \end{etaremune}
 
 \mysection{Professional Service}
-
 \begin{tabular}{\tdim}
-  2019       & Genome Sciences Art Committee \\
+  2019--     & Genome Sciences Art Committee \\
   2018--     & Postdoctoral representative for UW Genome Sciences faculty meetings\\ 
   2015--17   & UMB Molecular Medicine Event Planning Committee \\
   2017       & UMB Cancer Biology Research Retreat Organizing Committee \\
   2016       & UMB Grollman Lecture Organizing Committee \\
-
-
-
 \end{tabular}
 
 {\bf Journal Referee: }{Scientific Reports}.\\
-{\bf Conference Referee: }{Intelligent Systems for Molecular Biology}.
+{\bf Conference Referee: }{ISMB 2020}.
 
 \end{document}
   
