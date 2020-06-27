@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{xcolor}
 \usepackage[hidelinks=true]{hyperref}
 \usepackage[english]{babel}
 
@@ -41,6 +42,10 @@
 % No hyphenation
 \pretolerance=10000
 \raggedright
+
+% colors
+\definecolor{gray}{HTML}{404040}
+\color{gray}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -94,7 +99,7 @@
 \end{tabular}
 
 
-\mysection{Refereed Publications}
+\mysection{Peer-Reviewed Publications}
 {\small (* indicates equal contributions)}
 
 \begin{etaremune}
@@ -172,6 +177,49 @@
       Patent Pending.}
 \end{etaremune}
 
+
+\mysection{Scientific Software Contributions}
+\begin{etaremune}
+\item {\bf mokapot}. A Python package that enables the fast and flexible
+  application of semi-supervised learning to detect peptides in proteomics
+  experiments. \\
+  Homepage: \myref{https://github.com/wfondrie/mokapot} \\
+  Roles: creator and maintainer
+
+  \item {\bf ppx}. A Python package to retrieve metadata and files for
+    proteomics projects from public repositories through ProteomeXchange. \\
+    Homepage: \myref{https://ppx.readthedocs.io} \\
+    Roles: creator and maintainer
+    
+ \item {\bf Crux}. A mass spectrometry toolkit for proteomics data. \\
+   Homepage: \myref{http://crux.ms} \\
+   Roles: contributor
+
+ \item {\bf Percolator}. Semi-supervised learning for peptide identification
+   from shotgun proteomics datasets. \\
+   Homepage: \myref{http://percolator.ms} \\
+   Roles: contributor
+
+ \item {\bf Kojak}. A search engine for cross-linking proteomics. \\
+   Homepage: \myref{http://www.kojak-ms.org} \\
+   Roles: contributor
+
+ \item {\bf MSToolkit}. A library for interacting with proteomics data formats. \\
+   Homepage: \myref{http://github.com/mhoopmann/mstoolkit} \\
+   Roles: contributor.
+
+ \item {\bf spectrum\_utils}. A Python package for efficient MS/MS spectrum
+   processing and visualization. \\
+   Homepage: \myref{http://github.com/bittremieux/spectrum_utils} \\
+   Roles: contributor.
+
+ \item {\bf xComb}. A cross-linked peptide database approach to protein-protein
+   interaction analysis. \\
+   Homepage: \myref{http://github.com/GoodlettLab/xComb} \\
+   Roles: maintainer and contributor
+
+\end{etaremune}
+
 \mysection{Oral Presentations}
 \begin{etaremune}
   \item {\bf Fondrie WE}, Leung LM, Strickland DK, Ernst RK, Goodlett DR.
@@ -189,11 +237,12 @@
 \begin{etaremune}
   \item {\bf Fondrie, WE}, Noble WS. Mokapot: Fast and Flexible Semi-Supervised
     Learning for Peptide Detection. 28th Conference on Intelligent Systems For
-    Molecular Biology. Online. July 13--16, 2020
+    Molecular Biology, July 13--16, 2020. Montreal, QC, Canada. \textit{Moved
+      online due to COVID-19.}
   
   \item {\bf Fondrie, WE}, Noble WS. Boosting statistical power in small-scale
     experiments with Percolator. US Human Proteome Organization 16th Annual
-    Conference. Seattle, WA. March 8--11, 2020. \textit{Moved online due to
+    Conference. March 8--11, 2020. Seattle, WA \textit{Moved online due to
       COVID-19.}
   
   \item {\bf Fondrie, WE}, Noble WS. Static Models Improve Percolator
@@ -253,5 +302,14 @@
 {\bf Journal Referee: }{Scientific Reports}.\\
 {\bf Conference Referee: }{ISMB 2020}.
 
+\mysection{Scientific Blog Posts}
+\begin{etaremune}
+  \item William E. Fondrie. (2019) Using Static Models in Percolator. \\
+    \myref{https://willfondrie.com/2019/11/using-static-models-in-percolator/}
+
+  \item William E. Fondrie. (2019) An Intuitive Look at the xcorr Score
+    Functions in Proteomics. \\
+    \myref{https://willfondrie.com/2019/02/an-intuitive-look-at-the-xcorr-score-function-in-proteomics/}
+\end{etaremune}
 \end{document}
   
