@@ -2,17 +2,32 @@
 \usepackage{xcolor}
 \usepackage[hidelinks=true]{hyperref}
 \usepackage[english]{babel}
+\usepackage{fancyhdr}
 
 % Reverse Numbering
 \usepackage{etaremune}
+
+% Set 1-inch margins.
+\usepackage[margin=1in]{geometry}
+
+% Headers and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textrm{\textbf{William E.\ Fondrie}}}
+\lhead{\textrm{\textbf{Curriculum Vitae}}}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \rfoot{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
 
 % Use Roboto font
 \usepackage[rm]{roboto}
 \usepackage[T1]{fontenc}
 \renewcommand{\familydefault}{\sfdefault}
-
-% Set 1-inch margins.
-\usepackage[margin=1in]{geometry}
 
 % Skip a line between paragraphs.
 \setlength{\parskip}{1.5ex}
@@ -21,7 +36,9 @@
 \setlength{\parindent}{0in}
 
 % Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad \hrulefill}}
+\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
+    \hrulefill}}
+\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
 
 % Set the numbering style.
 \renewcommand{\labelenumi}{(\arabic{enumi})}
@@ -49,7 +66,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
+\thispagestyle{plain}
 \begin{center}
   {\bf \Large \textrm{William E. Fondrie, Ph.D.}}
   
@@ -188,7 +205,7 @@
 
   \item {\bf ppx}. A Python package to retrieve metadata and files for
     proteomics projects from public repositories through ProteomeXchange. \\
-    Homepage: \myref{https://ppx.readthedocs.io} \\
+    Homepage: \myref{https://github.com/wfondrie/ppx} \\
     Roles: creator and maintainer
     
  \item {\bf Crux}. A mass spectrometry toolkit for proteomics data. \\
@@ -200,22 +217,32 @@
    Homepage: \myref{http://percolator.ms} \\
    Roles: contributor
 
+ \item {\bf dask-ml}. A library for distributed and parallel machine learning
+   using dask. \\
+   Homepage: \myref{https://ml.dask.org} \\
+   Roles: contributor
+   
  \item {\bf Kojak}. A search engine for cross-linking proteomics. \\
    Homepage: \myref{http://www.kojak-ms.org} \\
    Roles: contributor
 
  \item {\bf MSToolkit}. A library for interacting with proteomics data formats. \\
-   Homepage: \myref{http://github.com/mhoopmann/mstoolkit} \\
-   Roles: contributor.
+   Homepage: \myref{https://github.com/mhoopmann/mstoolkit} \\
+   Roles: contributor
 
+ \item {\bf ANN-SoLo}. A spectral library search engine for fast and accurate
+   open modification searching. \\
+   Homepage: \myref{https://github.com/bittremieux/ANN-SoLo} \\
+   Roles: contributor
+   
  \item {\bf spectrum\_utils}. A Python package for efficient MS/MS spectrum
    processing and visualization. \\
-   Homepage: \myref{http://github.com/bittremieux/spectrum_utils} \\
+   Homepage: \myref{https://github.com/bittremieux/spectrum_utils} \\
    Roles: contributor.
 
  \item {\bf xComb}. A cross-linked peptide database approach to protein-protein
    interaction analysis. \\
-   Homepage: \myref{http://github.com/GoodlettLab/xComb} \\
+   Homepage: \myref{https://github.com/GoodlettLab/xComb} \\
    Roles: maintainer and contributor
 
 \end{etaremune}
@@ -293,14 +320,21 @@
 \mysection{Professional Service}
 \begin{tabular}{\tdim}
   2019--     & Genome Sciences Art Committee \\
-  2018--     & Postdoctoral representative for UW Genome Sciences faculty meetings\\ 
+  2018--     & Postdoctoral representative in UW Genome Sciences\\ 
   2015--17   & UMB Molecular Medicine Event Planning Committee \\
   2017       & UMB Cancer Biology Research Retreat Organizing Committee \\
   2016       & UMB Grollman Lecture Organizing Committee \\
 \end{tabular}
 
+\mysubsection{Conference Organization}
+\begin{tabular}{\tdim}
+  2020 & Workshop on High Performance Computing, Big Data Analytics and
+         Integration for Multi-Omics Biomedical Data (HPC-BOD 2020). \textit{Program
+         Committee Member}.
+\end{tabular}
+
 {\bf Journal Referee: }{Scientific Reports}.\\
-{\bf Conference Referee: }{ISMB 2020}.
+{\bf Conference Referee: }{Intelligent Systems for Molecular Biology 2020}.
 
 \mysection{Scientific Blog Posts}
 \begin{etaremune}
