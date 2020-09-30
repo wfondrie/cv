@@ -1,8 +1,10 @@
 \documentclass{article}
 \usepackage{xcolor}
-\usepackage[hidelinks=true]{hyperref}
 \usepackage[english]{babel}
 \usepackage{fancyhdr}
+%\usepackage{tabularx}
+%\usepackage{tablestyles}
+\usepackage[hidelinks=true]{hyperref}
 
 % Reverse Numbering
 \usepackage{etaremune}
@@ -54,7 +56,7 @@
 \setlength{\leftcol}{0.6in}
 \newlength{\rightcol}
 \setlength{\rightcol}{5.25in minus \leftcol}
-\newcommand\tdim{p{\leftcol}p{\rightcol}}
+\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
 \renewcommand{\arraystretch}{1.25} % make rows taller
 
 % No hyphenation
@@ -69,7 +71,7 @@
 \begin{document}
 \thispagestyle{plain}
 \begin{center}
-  {\bf \Large \textrm{William E. Fondrie, PhD}}
+  {\bf \Large \textrm{William E Fondrie, PhD}}
   
   Department of Genome Sciences\\
   University of Washington\\
@@ -82,38 +84,42 @@
 \mysection{Education}
 \begin{tabular}{\tdim}
   % 9/2013--06/2018
-  2013--18 & Ph.D. in Molecular Medicine, University of Maryland, Baltimore.
-               \newline Advisors: Dudley K. Strickland, PhD
-               and David R. Goodlett, PhD\\
+  2013--18 & {\bf PhD in Molecular Medicine}
+             \newline University of Maryland, Baltimore
+             \newline Advisors: Dudley Strickland, PhD and David Goodlett, PhD\\
   % 9/2009--05/2013
-  2009--13 & B.S. in Chemistry, University of North Carolina at Chapel Hill.\\
+  2009--13 & {\bf BS in Chemistry}
+             \newline University of North Carolina at Chapel Hill\\
 \end{tabular}
 
 \mysection{Employment and Professional Appointments}
 
 \begin{tabular}{\tdim}
-  2019--   & University of Washington Data Science Postdoctoral Fellow.\\
-  2018--   & Postdoctoral Fellow, University of Washington.
-             \newline Advisor: William S. Noble, PhD\\
-  2013--18 & Graduate Research Assistant, University of Maryland,
-             Baltimore.\\
+  2019--   & {\bf University of Washington Data Science Postdoctoral Fellow}\\
+  2018--   & {\bf Postdoctoral Fellow}, University of Washington
+             \newline Advisor: William Noble, PhD\\
+  2013--18 & {\bf Graduate Research Assistant}, University of Maryland,
+             Baltimore
+             \newline Advisors: Dudley Strickland, PhD and David Goodlett, PhD\\
+
+  2012--13 & {\bf Undergraduate Research Assistant}, University of North Carolina at
+             Chapel Hill
+             \newline Advisor: John Papanikolas, PhD\\
 \end{tabular}
 
 \mysection{Awards and Honors}
 \begin{tabular}{\tdim}
-  2019--   & Ruth L. Kirschstein Institutional National Research Service Award,
-             NIH T32HG000035.
-             \newline \textit{Postdoctoral Trainee}.\\
-  2017     & Travel Fellowship to the May Institute on Computation and Statistics
-             for Mass Spectrometry and Proteomics.\\
-  2017--18 & Ruth L. Kirschstein Individual National Research Service Award,
-             NIH F31CA213815. \\
+  2019--   & {\bf Ruth L Kirschstein Institutional National Research Service Award}
+             \newline NIH T32HG000035, Postdoctoral Trainee\\
+  2017     & {\bf Travel Fellowship to the May Institute on Computation and Statistics
+             for\newline Mass Spectrometry and Proteomics}\\
+  2017--18 & {\bf Ruth L Kirschstein Individual National Research Service Award}
+             \newline NIH F31CA213815, PI\\
              % \newline \textit{Impact Score: 25 (16\%)}\\
-  2016--17 & Ruth L. Kirschstein Institutional National Research Service Award,
-             NIH T32HL007698.
-             \newline \textit{Predoctoral Trainee}.\\
-  2012     & Markham Summer Undergraduate Research Award.\\
-  2009     & Central Carolina's chapter of Phi Beta Kappa Scholarship.\\
+  2016--17 & {\bf Ruth L Kirschstein Institutional National Research Service Award}
+             \newline NIH T32HL007698, Predoctoral Trainee\\
+  2012     & {\bf Markham Summer Undergraduate Research Award}\\
+  2009     & {\bf Central Carolina's chapter of Phi Beta Kappa Scholarship}\\
 \end{tabular}
 
 
@@ -124,7 +130,7 @@
 
   \item \textbf{Fondrie WE}, Noble WS. (2020) Machine learning strategy that
     leverages large datasets to boost statistical power in small-scale
-    experiments. \textit{J Proteome Res} PMID: 32009418.
+    experiments. \textit{J Proteome Res} 6;19(3):1267--1274. PMID: 32009418.
   
   \item Liang T, Leung LM, Opene B, \textbf{Fondrie WE}, Lee YI, Chandler CE,
     Yoon SH, Doi Y, Ernst RK, Goodlett DR. (2019) Rapid microbial identification
@@ -198,11 +204,12 @@
 
 \mysection{Scientific Software Contributions}
 \begin{etaremune}
-\item {\bf mokapot}. A Python package that enables the fast and flexible
-  application of semi-supervised learning to detect peptides in proteomics
-  experiments. \\
-  Homepage: \myref{https://github.com/wfondrie/mokapot} \\
-  Roles: creator and maintainer
+  
+  \item {\bf mokapot}. A Python package that enables the fast and flexible
+    application of semi-supervised learning to detect peptides in proteomics
+    experiments. \\
+    Homepage: \myref{https://github.com/wfondrie/mokapot} \\
+    Roles: creator and maintainer
 
   \item {\bf ppx}. A Python package to retrieve metadata and files for
     proteomics projects from public repositories through ProteomeXchange. \\
@@ -250,6 +257,10 @@
 
 \mysection{Talks}
 \begin{etaremune}
+  \item {\bf Fondrie WE}. Learning from Mass Spectra. Genome Sciences
+    Seminar, August 12, 2020. University of Washington Department of Genome
+    Sciences, Seattle, Washington.
+  
   \item {\bf Fondrie WE}, Leung LM, Strickland DK, Ernst RK, Goodlett DR.
     Detecting antibiotic resistance by MALDI-TOF analysis of bacterial membrane
     glycolipids. 65th American Society for Mass Spectrometry Annual Conference
@@ -261,7 +272,7 @@
     Baltimore, MD.
 \end{etaremune}
 
-\mysection{Poster Presentations}
+\mysection{Posters}
 \begin{etaremune}
   \item {\bf Fondrie, WE}, Noble WS. Mokapot: Fast and Flexible Semi-Supervised
     Learning for Peptide Detection. 28th Conference on Intelligent Systems For
@@ -273,20 +284,20 @@
     Conference. March 8--11, 2020. Seattle, WA \textit{Moved online due to
       COVID-19.}
   
-  \item {\bf Fondrie, WE}, Noble WS. Static Models Improve Percolator
-    Performance on Small-Scale Proteomics Experiments. University of Washington
-    Department of Genome Sciences Annual Retreat, Sept 18--20, 2019.
-    Leavenworth, WA.
+  %\item {\bf Fondrie, WE}, Noble WS. Static Models Improve Percolator
+  %  Performance on Small-Scale Proteomics Experiments. University of Washington
+  %  Department of Genome Sciences Annual Retreat, Sept 18--20, 2019.
+  %  Leavenworth, WA.
   
   \item {\bf Fondrie WE}, Noble WS. Robust Cross-Linked Peptide Detection Using
     Pretrained Neural Networks. 67th American Society for Mass Spectrometry
     Annual Conference on Mass Spectrometry and Allied Topics, June 1--6, 2019.
     Atlanta, GA.
 
-  \item {\bf Fondrie WE}, Zelter A, Henry E, Abel S, Le Roch KG, Davis TN, Noble
-    WS. Building Robust Score Vectors for Cross-Linked Peptide Identification.
-    University of Washington Department of Genome Sciences Annual Retreat, Sept
-    17--19, 2018. Leavenworth, WA.
+  %\item {\bf Fondrie WE}, Zelter A, Henry E, Abel S, Le Roch KG, Davis TN, Noble
+  %  WS. Building Robust Score Vectors for Cross-Linked Peptide Identification.
+  %  University of Washington Department of Genome Sciences Annual Retreat, Sept
+  %  17--19, 2018. Leavenworth, WA.
 
   \item {\bf Fondrie WE}, Hampton B, Muratoglu SC, Goodlett DR, Strickland DK.
     Detecting LRP1B protein interactions in glioma. UMB Cancer Biology Research
@@ -321,11 +332,17 @@
 
 \mysection{Mentoring}
 \begin{tabular}{\tdim}
-  2020--     & Lilian Heil, PhD student, Department of Genome Sciences, University of Washington.\\
-  2019--     & Kianna Hales, PhD student, Department of Genome Sciences, University of Washington.\\
+  \raggedright
+  2020--     & {\bf Elena Romero}, PhD student\newline Department of Genome Sciences, University of Washington\\
+  2020--     & {\bf Donovan See}, Undergraduate student\newline University of Washington\\
+  2020--     & {\bf Lilian Heil}, PhD student\newline Department of Genome Sciences, University of Washington\\
+  2019--     & {\bf Kianna Hales}, PhD student\newline Department of Genome Sciences, University of Washington\\
+  
 \end{tabular}
 
 \mysection{Professional Service}
+
+\mysubsection{Departmental Service}
 \begin{tabular}{\tdim}
   2019--     & UW Genome Sciences Art Committee \\
   2018--     & Postdoctoral representative in UW Genome Sciences\\ 
@@ -334,25 +351,52 @@
   2016       & UMB Grollman Lecture Organizing Committee \\
 \end{tabular}
 
+\newpage
 \mysubsection{Conference Organization}
 \begin{tabular}{\tdim}
   2020 & Workshop on High Performance Computing, Big Data Analytics and
-         Integration for Multi-Omics Biomedical Data (HPC-BOD 2020). \textit{Program
+         Integration for Multi-Omics Biomedical Data (HPC-BOD 2020) \textit{Program
          Committee Member}.
 \end{tabular}
 
-{\bf Journal Referee: }{Scientific Reports}.\\
-{\bf Conference Referee: }{Intelligent Systems for Molecular Biology 2020}.
+\mysubsection{Professional Memberships}
+\begin{tabular}{\tdim}
+  2020--     & United States Human Proteome Organization (US HUPO) \\
+  2013--     & American Society for Mass Spectrometry (ASMS) \\
+\end{tabular}
 
-\newpage
+{\bf Journal Referee: }{Scientific Reports}\\
+{\bf Conference Referee: }{Intelligent Systems for Molecular Biology 2020}
+
+
 \mysection{Scientific Blog Posts}
 \begin{etaremune}
   \item {\bf Fondrie WE}. (2019) Using Static Models in Percolator. \\
     \myref{https://willfondrie.com/2019/11/using-static-models-in-percolator/}
 
   \item {\bf Fondrie WE}. (2019) An Intuitive Look at the xcorr Score
-    Functions in Proteomics. \\
+    Function in Proteomics. \\
     \myref{https://willfondrie.com/2019/02/an-intuitive-look-at-the-xcorr-score-function-in-proteomics/}
+
 \end{etaremune}
+
+\mysection{References}
+{\bf William Noble} \\
+Department of Genome Sciences, University of Washington\\
+wnoble@uw.edu
+
+{\bf Michael MacCoss} \\
+Department of Genome Sciences, University of Washington\\
+maccoss@uw.edu
+
+{\bf Dudley Strickland} \\
+Center for Vascular and Inflammatory Diseases, University of Maryland
+Baltimore\\
+dstrickland@som.umaryland.edu
+
+{\bf David Goodlett} \\
+Genome BC Proteome Centre, University of Victoria\\
+goodlett@uvic.ca
+
 \end{document}
   
