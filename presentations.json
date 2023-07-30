@@ -1,0 +1,109 @@
+[
+    {
+        "title": "The final frontier: These are the voyages through a latent space shared by mass spectra and peptides",
+        "authors": [
+            "William E Fondrie"
+        ],
+        "venue": "38th Asilomar Conference on Mass Spectrometry",
+        "year": 2023,
+        "month": "November",
+        "location": "Pacific Grove, CA",
+        "kind": "invited"
+    },
+    {
+        "title": "The Need for Speed: Compressed Sensing With Generative Models Enables Ultra High-Throughput DIA Mass Spectrometry",
+        "authors": [
+            "William E Fondrie",
+            "Erin F Broderick",
+            "Rico Meinl",
+            "Noelle C Schumacker",
+            "Daniele Canzani",
+            "Alexander J Federation",
+            "Lindsay K Pino"
+        ],
+        "venue": "70th American Society for Mass Spectrometry Annual Conference on Mass Spectrometry and Allied Topics",
+        "year": 2022,
+        "month": "June",
+        "location": "Minneapolis, MN",
+        "kind": "talk"
+    },
+    {
+        "title": "Learning Compact Representations of High-Resolution Tandem Mass Spectra Without Supervision",
+        "authors": [
+            "William E Fondrie",
+            "William S Noble",
+            "Elena Romero"
+        ],
+        "venue": "69th American Society for Mass Spectrometry Annual Conference on Mass Spectrometry and Allied Topics",
+        "year": 2021,
+        "month": "November",
+        "location": "Philadelphia, PA",
+        "kind": "talk"
+    },
+    {
+        "title": "Learning Compact Representations of High-Resolution Tandem Mass Spectra Without Supervision",
+        "authors": [
+            "William E Fondrie",
+            "William S Noble",
+            "Elena Romero"
+        ],
+        "venue": "Intelligent Systems for Molecular Biology",
+        "year": 2021,
+        "month": "July",
+        "location": "Online",
+        "kind": "talk"
+    },
+    {
+        "title": "Deep Learning to Enable Proteomics at Scale",
+        "authors": [
+            "William E Fondrie"
+        ],
+        "venue": "American Society for Mass Spectrometry Emergin Talent: Academia webinar series",
+        "year": 2020,
+        "month": "November",
+        "location": "Online",
+        "kind": "talk"
+    },
+    {
+        "title": "Learning from Mass Spectra",
+        "authors": [
+            "William E Fondrie"
+        ],
+        "venue": "Genome Sciences Seminar",
+        "year": 2020,
+        "month": "August",
+        "location": "University of Washington Department of Genome Sciences, Seattle, WA",
+        "kind": "talk"
+    },
+    {
+        "title": "Detecting antibiotic resistance by MALDI-TOF analysis of bacterial membrane glycolipids.",
+        "authors": [
+            "William E Fondrie",
+            "Lisa M Leung",
+            "Dudley K Strickland",
+            "Robert K Ernst",
+            "David R Goodlett"
+        ],
+        "venue": "65th American Society for Mass Spectrometry Annual Conference on Mass Spectrometry and Allied Topics",
+        "year": 2017,
+        "month": "June",
+        "location": "Indianapolis, IN",
+        "kind": "talk"
+    },
+    {
+        "title": "LRP1 modulates TGF-beta signaling in the descending thoracic aorta",
+        "authors": [
+            "William E Fondrie",
+            "Selen C Muratoglu",
+            "Brian Hampton",
+            "Molly Migliorini",
+            "Rebecca Galisteo",
+            "Dudley K Strickland"
+        ],
+        "venue": "Molecular Medicine Research Retreat",
+        "year": 2016,
+        "month": "October",
+        "location": "Baltimore, MD",
+        "kind": "talk"
+    }
+]

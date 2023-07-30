@@ -1,4 +1,4 @@
-all: fondrie_cv.pdf fondrie_biosketch.pdf
+all: fondrie_cv.pdf
 
 %.pdf: %.tex
 	pdflatex $*.tex
@@ -7,3 +7,9 @@ all: fondrie_cv.pdf fondrie_biosketch.pdf
 		pdflatex $*.tex ; \
 	fi
 	pdflatex $*.tex
+
+fondrie_cv.tex: fondrie_cv.template.tex build.py presentations.json pubs.bib
+	python build.py
+
+clean:
+	rm -r *.aux *.log *.out auto/
