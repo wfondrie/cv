@@ -71,14 +71,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \thispagestyle{plain}
-%\begin{center}
+\begin{center}
 \textbf{\Large William E Fondrie, PhD} \\
 Talus Bioscience \\
 wfondrie@talus.bio \\
 % {phone #}\\
 \href{https://willfondrie.com}{willfondrie.com}\\
 Updated \today.
-%\end{center}
+\end{center}
 
 
 \mysection{Education}
@@ -95,7 +95,8 @@ Updated \today.
 \mysection{Employment and Professional Appointments}
 
 \begin{tabular}{\tdim}
-  2022--   & \textbf{Manager, Computational Biology}, Talus Bioscience\\
+  2024--   & \textbf{Head of Data Science and Engineering}, Talus Bioscience\\
+  2022--24 & \textbf{Manager, Computational Biology}, Talus Bioscience\\
   2021--22 & \textbf{Senior Data Scientist}, Talus Bioscience\\
   2019--21 & \textbf{University of Washington Data Science Postdoctoral Fellow}
              \newline UW eScience Institute\\
@@ -129,11 +130,13 @@ Updated \today.
 \end{tabular}
 
 \newpage
+{% if preprints %}
 \mysection{Preprints}
 \newline {\small (* indicates equal contributions)}
 \begin{etaremune}
 {{ preprints }}
 \end{etaremune}
+{% endif %}
 
 \mysection{Peer-Reviewed Publications}
 \newline {\small (* indicates equal contributions)}
@@ -149,6 +152,8 @@ Updated \today.
 
 \mysection{Patents}
 \begin{etaremune}
+  \item Canzani D, \textbf{Fondrie WE}, Pino LK, Federation A. (2023) Methods for identifying reactive functional cysteines in nuclear proteins. WO2023225568A1.
+
   \item Goodlett DR, Ernst RK, Liang T, \textbf{Fondrie WE}, Nilsson E. (2018)
   Methods for Lipid Extraction and Identification of Microbes Using Same Via
   Mass Spectrometry. US Patent Application 2017066342. Filed 12/14/2017. {\it
@@ -207,6 +212,10 @@ Updated \today.
   data repositories. \\
   Homepage: \myref{https://github.com/wfondrie/ppx} \\
   Roles: creator and maintainer
+
+  \item \textbf{quantms}. A NextFlow pipeline for quantitative proteomics. \\
+  Homepage: \myref{https://quantms.org/home} \\
+  Roles: contributor
 
   \item \textbf{Sage}. An ultrafast open-modification search engine for proteomics. \\
   Homepage: \myref{https://sage-docs.vercel.app/} \\
@@ -349,6 +358,7 @@ Updated \today.
 
 \mysubsection{Conference Organization}
 \begin{tabular}{\tdim}
+  2024 & Intelligent Systems for Molecular Biology CompMS COSI. \textit{Program Committee Member}. \\
   2021 & Intelligent Systems for Molecular Biology CompMS COSI. \textit{Program Committee Member}. \\
   2020 & Workshop on High Performance Computing, Big Data Analytics and
          Integration for Multi-Omics Biomedical Data (HPC-BOD 2020). \textit{Program
@@ -375,6 +385,9 @@ Updated \today.
 
 \mysection{Scientific Blog Posts}
 \begin{etaremune}
+  \item \textbf{Fondrie WE}. (2024) Tips for Collaborative Writing with LaTeX and GitHub. \\
+  \myref{https://willfondrie.com/2024/02/10-tips-for-collaborative-writing-with-latex-and-github/}
+
   \item \textbf{Fondrie WE}. (2022) How to Use R Packages in Python. \\
   \myref{https://willfondrie.com/2022/01/how-to-use-r-packages-in-python/}
 

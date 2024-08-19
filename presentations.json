@@ -1,5 +1,23 @@
 [
     {
+        "title": "The Screen’s Gambit: Functional Chemoproteomics Accelerated by Compressed Sensing and Generative Models",
+        "authors": [
+            "Carolyn Allen",
+            "J Sebastian Paez",
+            "Andrea I Gutierrez",
+            "Julia E Robbins",
+            "Daniele Canzani",
+            "Lindsay K Pino",
+            "Alexander J Federation",
+            "William E Fondrie"
+        ],
+        "venue": "72nd American Society for Mass Spectrometry Annual Conference on Mass Spectrometry and Allied Topics",
+        "year": 2024,
+        "month": "June",
+        "location": "Anaheim, CA",
+        "kind": "talk"
+    },
+    {
         "title": "The final frontier: These are the voyages through a latent space shared by mass spectra and peptides",
         "authors": [
             "William E Fondrie"

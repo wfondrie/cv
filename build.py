@@ -20,6 +20,7 @@ from pybtex.database.input import bibtex
 TEX = Path("fondrie_cv.tex")
 BIB = Path("pubs.bib")
 PRES = Path("presentations.json")
+PREPRINT_SERVERS = {"biorxiv", "arxiv", "chemrxiv"}
 
 COFIRST = {
     "10.1101/2023.01.03.522621": 2,
@@ -127,7 +128,7 @@ class Reference:
     @property
     def citation_type(self) -> str:
         """The type of citation this is."""
-        if self.journal.lower() in ("biorxiv", "arxiv"):
+        if (self.journal.lower() in PREPRINT_SERVERS):
             return "preprint"
 
         if self.title.lower().startswith("biological insight from mass"):
@@ -222,9 +223,10 @@ def main():
     loader = FileSystemLoader(searchpath="./")
     env = Environment(loader=loader, autoescape=select_autoescape())
     template = env.get_template("fondrie_cv.template.tex")
+    print(pubs.get("preprint"), "")
     rendered = template.render(
         articles="\n\n".join(pubs["article"]),
-        preprints="\n\n".join(pubs["preprint"]),
+        preprints="\n\n".join(pubs.get("preprint", [])),
         dissertation="\n\n".join(pubs["dissertation"]),
         invited="\n\n".join(presentations["invited"]),
         talks="\n\n".join(presentations["talk"])
