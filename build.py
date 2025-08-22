@@ -146,6 +146,8 @@ class Reference:
         except KeyError:
             if fields.get("type", "") == "Preprint":
                 journal = "bioRxiv"
+            elif fields.get("publisher", "") in ["bioRxiv", "ChemRxiv"]:
+                journal = fields["publisher"]
             else:
                 journal = fields.get("booktitle", "")
 

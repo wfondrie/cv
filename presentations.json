@@ -1,5 +1,16 @@
 [
     {
+        "title": "Scaling Proteomics to fuel AI-Powered TF Drug Discovery",
+        "authors": [
+            "William E Fondrie"
+        ],
+        "venue": "EuBIC-MS Developers Meeting",
+        "year": 2025,
+        "month": "February",
+        "location": "Vahrn, Italy",
+        "kind": "invited"
+    },
+    {
         "title": "The Screen’s Gambit: Functional Chemoproteomics Accelerated by Compressed Sensing and Generative Models",
         "authors": [
             "Carolyn Allen",
