@@ -1,5 +1,30 @@
 [
     {
+        "title": "Discover covalent ligands for protein targets with Ptarmigan",
+        "authors": [
+            "William E Fondrie",
+            "Lillian T Tatka",
+            "J Sebastian Paez",
+            "Anastasiya V Prymolenna",
+            "Daniele Canzani",
+            "Andrea I Gutierrez",
+            "Kyle Siebenthall",
+            "Julia E Robbins",
+            "Evan E Hubbard",
+            "Margaux McBirney",
+            "Sydney Huff",
+            "Brian McEllin",
+            "Gaelle Mercenne",
+            "Lindsay K Pino",
+            "Alexander J Federation"
+        ],
+        "venue": "74th American Society for Mass Spectrometry Annual Conference on Mass Spectrometry and Allied Topics",
+        "year": 2026,
+        "month": "June",
+        "location": "San Diego, CA",
+        "kind": "talk"
+    },
+    {
         "title": "Scaling Proteomics to fuel AI-Powered TF Drug Discovery",
         "authors": [
             "William E Fondrie"
